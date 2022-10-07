@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{25
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Api", "Systems\Twitter.Api\Twitter.Api.csproj", "{BEEE65D7-A4EE-472E-9F44-FDEB2CC4A527}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.DuendeServer", "Systems\Twitter.DuendeServer\Twitter.DuendeServer.csproj", "{46E682AD-277A-4729-B562-105A5F0902D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +19,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BEEE65D7-A4EE-472E-9F44-FDEB2CC4A527} = {F66C3818-21C6-4DB8-8E62-5D41C8FDBA26}
+		{46E682AD-277A-4729-B562-105A5F0902D8} = {F66C3818-21C6-4DB8-8E62-5D41C8FDBA26}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BEEE65D7-A4EE-472E-9F44-FDEB2CC4A527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BEEE65D7-A4EE-472E-9F44-FDEB2CC4A527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEEE65D7-A4EE-472E-9F44-FDEB2CC4A527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEEE65D7-A4EE-472E-9F44-FDEB2CC4A527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E682AD-277A-4729-B562-105A5F0902D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E682AD-277A-4729-B562-105A5F0902D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E682AD-277A-4729-B562-105A5F0902D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E682AD-277A-4729-B562-105A5F0902D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
