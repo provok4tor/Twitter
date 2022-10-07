@@ -1,21 +1,25 @@
+using Twitter.Api;
+using Twitter.Api.Configuration;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
 
-// Add services to the container.
+builder.Host.UseSerilog((host, cfg) =>
+{
+    cfg.ReadFrom.Configuration(host.Configuration);
+});
+services.AddAppServices();
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+services.AddControllers();
+
+services.AddEndpointsApiExplorer();
+
+services.AddAppSwagger();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseAppSwagger();
 
 app.UseHttpsRedirection();
 
